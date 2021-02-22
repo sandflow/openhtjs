@@ -1,0 +1,39 @@
+{
+  "name": "openht",
+  "version": "1.0.0-dev.1",
+  "description": "High-throughput JPEG 2000 (Rec. ITU-T T.814 | ISO/IEC 15444-15) decoder",
+  "main": "dist/HT.js",
+  "files": [
+    "dist/*"
+  ],
+  "type": "module",
+  "engines": {
+    "node": ">=13"
+  },
+  "scripts": {
+    "build": "sh ./scripts/build.sh",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "htj2k",
+    "j2k",
+    "jpeg",
+    "2000",
+    "decoder",
+    "encoder",
+    "high-throughput",
+    "image",
+    "codec"
+  ],
+  "author": "Pierre-Anthony Lemieux <pal@palemieux.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sandflow/openhtjs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sandflow/openhtjs/issues",
+    "email": "info@sandflow.com"
+  }
+}

@@ -1,0 +1,11 @@
+BasedOnStyle: LLVM
+Language: Cpp
+UseTab: Never
+IndentWidth: 2
+TabWidth: 2
+ColumnLimit: 110
+SpaceAfterCStyleCast: true
+PointerAlignment: Left
+AlignAfterOpenBracket: DontAlign
+AllowShortBlocksOnASingleLine: Empty
+AllowShortFunctionsOnASingleLine: Empty
