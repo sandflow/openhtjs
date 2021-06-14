@@ -167,13 +167,15 @@ struct FrameInfo {
     bool isSigned;
 }
 ```
+
 ### Point
 
 ```cpp
 struct Point {
   uint32_t x;
   uint32_t y;
-}```
+}
+```
 
 ## Development
 
