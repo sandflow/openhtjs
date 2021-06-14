@@ -9,7 +9,7 @@
 
 ## Introduction
 
-openHTJS is a JavaScript for decoding HT codestreams. HT codestreams are JPEG 2000 codestreams that use the ultra-fast block decoder
+openHTJS is a JavaScript library for decoding HT codestreams. HT codestreams are JPEG 2000 codestreams that use the ultra-fast block decoder
 specified in [Rec. ITU-T T.814 | ISO/IEC 15444-15](https://www.itu.int/rec/T-REC-T.814).
 
 It is built on top of the [OpenJPH library](https://github.com/aous72/OpenJPH), which it compiles to JavaScript using
