@@ -38,6 +38,16 @@ See `src/test/site` for an example that fetches a codestream and decodes into a 
 import {Decoder} from "./HT.js"
 ```
 
+For each codestream, the overall call flow is as follows:
+
+* a `Decoder()` is instantiated
+* the codestream is written into the buffer returned by `Decoder::getCodestreamBuffer()`
+* the codestream header is parsed using `Decoder::readHeader()`
+* ...
+* the codestream is decoded either:
+  * line by line by calling `Decoder::startDecoding()` followed by multiple calls to  `Decoder::decodeLineAsUnsignedSamples()`
+  * directly into an RGBA 8-bit buffer using `Decoder::decodeToRGBAArray()`
+
 ### Constructor
 
 ```js
@@ -92,6 +102,12 @@ Starts the decoding process.
     UInt32Array decodeLineAsUnsignedSamples()
 
 Decodes a complete line of the image as a sequence of `UInt32` values.
+
+### decodeToRGBAArray()
+
+    decodeToRGBAArray(array_buffer, decompositionLevel = 0)
+
+Decodes the codestream into an RGBA 8-bit packed array buffer.
 
 ### getDecodedComponentNumber()
 
